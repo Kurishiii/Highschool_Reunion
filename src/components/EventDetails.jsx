@@ -19,8 +19,8 @@ export default function EventDetails() {
               memories, and create new ones.
             </p>
             <p className="text-lg leading-relaxed text-gray-600">
-              Whether you graduated last year or decades ago, the Feinstein Falcons spirit
-              unites us all. Come celebrate the bonds that time can't break.
+              Whether you graduated in the final days or decades ago, the Feinstein Falcons spirit
+              unites us all. Though our halls have closed, the bonds we built remain unbroken—come celebrate the legacy we share
             </p>
           </div>
 
