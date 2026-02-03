@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import TicketForm from '../components/TicketForm';
+import falconsLogo from '/falcons.png';
 
 export default function PurchasePage() {
   return (
@@ -34,7 +35,7 @@ export default function PurchasePage() {
             <div className="sticky top-24">
               <div className="card bg-gradient-to-br from-teal-600 to-teal-700 text-white">
                 <div className="mb-6 flex items-center gap-3">
-                  <img src="/falcon.svg" alt="Falcons" className="h-12 w-12" />
+                  <img src={falconsLogo} alt="Falcons" className="h-12 rounded" />
                   <div>
                     <h2 className="font-display text-xl font-bold">Feinstein Reunion</h2>
                     <p className="text-sm text-teal-200">Class of Every Year</p>

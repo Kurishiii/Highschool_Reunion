@@ -1,3 +1,5 @@
+import falconsLogo from '/falcons.png';
+
 export default function Hero() {
   return (
     <section className="hero-gradient relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-16">
@@ -11,7 +13,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
         {/* Falcon mascot */}
         <div className="float-animation mb-8 inline-block">
-          <img src="/falcon.svg" alt="Feinstein Falcons" className="mx-auto h-28 w-28 drop-shadow-2xl sm:h-36 sm:w-36" />
+          <img src={falconsLogo} alt="Feinstein Falcons" className="mx-auto h-32 rounded-2xl shadow-2xl shadow-black/40 sm:h-40" />
         </div>
 
         {/* School name */}
