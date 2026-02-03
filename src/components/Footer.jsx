@@ -1,3 +1,5 @@
+import falconsLogo from '/falcons.png';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 py-12 text-gray-400">
@@ -6,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <img src="/falcon.svg" alt="Falcons" className="h-10 w-10" />
+              <img src={falconsLogo} alt="Falcons" className="h-10 rounded" />
               <div>
                 <p className="font-semibold text-white">Feinstein High School</p>
                 <p className="text-sm text-gray-500">Reunion 2026</p>

@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import falconsLogo from '/falcons.png';
 
+const STRIPE_URL = 'https://buy.stripe.com/test_8x2cN7dt1avMgHU0log3600';
+
 export default function Hero() {
+  const [quantity, setQuantity] = useState(1);
   return (
     <section className="hero-gradient relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-16">
       {/* Decorative background elements */}
@@ -58,19 +62,33 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* CTA buttons */}
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a href="https://buy.stripe.com/test_8x2cN7dt1avMgHU0log3600" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg shadow-teal-500/25">
-            Purchase Tickets — $55
-          </a>
+        {/* Quantity selector + CTA */}
+        <div className="flex flex-col items-center gap-5">
+          <div className="flex items-center gap-4">
+            <label className="text-sm font-medium text-teal-200">Tickets:</label>
+            <div className="flex items-center gap-0 rounded-lg border border-teal-500/40 overflow-hidden">
+              <button
+                onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                className="px-3 py-2 text-white bg-teal-600/30 hover:bg-teal-600/50 transition-colors"
+              >
+                -
+              </button>
+              <span className="px-5 py-2 text-lg font-bold text-white bg-black/30">{quantity}</span>
+              <button
+                onClick={() => setQuantity(q => Math.min(10, q + 1))}
+                className="px-3 py-2 text-white bg-teal-600/30 hover:bg-teal-600/50 transition-colors"
+              >
+                +
+              </button>
+            </div>
+          </div>
           <a
-            href="#details"
-            className="inline-flex items-center gap-2 text-teal-300 transition-colors hover:text-teal-200"
+            href={`${STRIPE_URL}?quantity=${quantity}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-lg shadow-teal-500/25"
           >
-            Learn More
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+            Purchase {quantity} {quantity === 1 ? 'Ticket' : 'Tickets'} — ${quantity * 55}
           </a>
         </div>
       </div>

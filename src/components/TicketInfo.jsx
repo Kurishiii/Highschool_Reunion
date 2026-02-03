@@ -1,4 +1,9 @@
+import { useState } from 'react';
+
+const STRIPE_URL = 'https://buy.stripe.com/test_8x2cN7dt1avMgHU0log3600';
+
 export default function TicketInfo() {
+  const [quantity, setQuantity] = useState(1);
   return (
     <section className="bg-gray-50 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -64,8 +69,31 @@ export default function TicketInfo() {
                 </div>
               </div>
 
-              <a href="https://buy.stripe.com/test_8x2cN7dt1avMgHU0log3600" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center">
-                Purchase Tickets
+              <div className="mb-4 flex items-center justify-center gap-4">
+                <label className="text-sm font-medium text-gray-700">Quantity:</label>
+                <div className="flex items-center gap-0 rounded-lg border border-gray-300 overflow-hidden">
+                  <button
+                    onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                    className="px-3 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
+                  >
+                    -
+                  </button>
+                  <span className="px-5 py-2 text-lg font-bold text-gray-900 bg-white">{quantity}</span>
+                  <button
+                    onClick={() => setQuantity(q => Math.min(10, q + 1))}
+                    className="px-3 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <a
+                href={`${STRIPE_URL}?quantity=${quantity}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full text-center"
+              >
+                Purchase {quantity} {quantity === 1 ? 'Ticket' : 'Tickets'} — ${quantity * 55}
               </a>
             </div>
           </div>
