@@ -35,8 +35,8 @@ export default function EventDetails() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Date & Time</h3>
-                <p className="text-gray-600">Saturday, May 23, 2026</p>
-                <p className="text-gray-600">7:00 PM</p>
+                <p className="text-gray-600">Saturday, May 30, 2026</p>
+                <p className="text-gray-600">7:00 PM – 12:00 AM</p>
               </div>
             </div>
 
@@ -50,8 +50,8 @@ export default function EventDetails() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Location</h3>
-                <p className="text-gray-600">Bar 101</p>
-                <p className="text-gray-600">1478 Atwood Ave, Johnston, RI 02919</p>
+                <p className="text-gray-600">Urban Event Space</p>
+                <p className="text-gray-600">249 Main Street, Pawtucket, RI</p>
               </div>
             </div>
 

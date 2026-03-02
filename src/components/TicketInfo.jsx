@@ -17,7 +17,7 @@ export default function TicketInfo() {
             <div className="bg-gradient-to-r from-teal-600 to-teal-500 px-8 py-6 text-center text-white">
               <p className="text-sm font-medium uppercase tracking-wider text-teal-100">General Admission</p>
               <div className="mt-2 flex items-baseline justify-center gap-1">
-                <span className="text-5xl font-bold">$55</span>
+                <span className="text-5xl font-bold">$50</span>
                 <span className="text-lg text-teal-100">/ ticket</span>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function TicketInfo() {
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-600">Full appetizer bar experience</span>
+                  <span className="text-gray-600">Full dinner buffet</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
@@ -51,15 +51,21 @@ export default function TicketInfo() {
                   </svg>
                   <span className="text-gray-600">An evening of reconnecting with fellow Falcons</span>
                 </li>
+                <li className="flex items-start gap-3">
+                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-gray-600">Complimentary drink ticket for the first 50 guests</span>
+                </li>
               </ul>
 
-              <div className="mb-8 rounded-lg bg-amber-50 p-4">
+              <div className="mb-4 rounded-lg bg-amber-50 p-4">
                 <div className="flex items-start gap-2">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                   <p className="text-sm text-amber-800">
-                    Beverages available for purchase at the cash bar.
+                    Food is first-come, first-served (buffet style). This is a ticket-only event — no ticket, no entry. Partners/Guests are welcome with a ticket purchase.
                   </p>
                 </div>
               </div>

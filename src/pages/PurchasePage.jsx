@@ -48,8 +48,8 @@ export default function PurchasePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                     <div>
-                      <p className="font-medium">Saturday, May 23, 2026</p>
-                      <p className="text-sm text-teal-200">7:00 PM</p>
+                      <p className="font-medium">Saturday, May 30, 2026</p>
+                      <p className="text-sm text-teal-200">7:00 PM – 12:00 AM</p>
                     </div>
                   </div>
 
@@ -59,8 +59,8 @@ export default function PurchasePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                     <div>
-                      <p className="font-medium">Bar 101</p>
-                      <p className="text-sm text-teal-200">1478 Atwood Ave, Johnston, RI 02919</p>
+                      <p className="font-medium">Urban Event Space</p>
+                      <p className="text-sm text-teal-200">249 Main Street, Pawtucket, RI</p>
                     </div>
                   </div>
 
@@ -69,8 +69,8 @@ export default function PurchasePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
                     </svg>
                     <div>
-                      <p className="font-medium">$55.00 per ticket</p>
-                      <p className="text-sm text-teal-200">Includes full appetizer bar</p>
+                      <p className="font-medium">$50.00 per ticket</p>
+                      <p className="text-sm text-teal-200">Includes full dinner buffet</p>
                     </div>
                   </div>
                 </div>
