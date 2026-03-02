@@ -71,7 +71,7 @@ export default function TicketInfo() {
               </div>
 
               <a
-                href="https://buy.stripe.com/cNi14mdFFdME82J8on2Ry00"
+                href="https://buy.stripe.com/8x24gy1WXbEwbeVbAz2Ry01"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full text-center"

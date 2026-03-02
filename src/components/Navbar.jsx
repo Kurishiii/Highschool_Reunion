@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* CTA */}
           {isHome ? (
             <a
-              href="https://buy.stripe.com/cNi14mdFFdME82J8on2Ry00"
+              href="https://buy.stripe.com/8x24gy1WXbEwbeVbAz2Ry01"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-teal-500 px-5 py-2.5 text-sm font-semibold text-white
